@@ -19,7 +19,7 @@ namespace Schmoftware
 
         private void MaxSchmax_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("MaxSchmax");
+            MessageBox.Show("MaxSchmax ist der King");
         }
     }
 }
