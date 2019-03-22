@@ -33,9 +33,10 @@
             // 
             // MaxSchmax
             // 
-            this.MaxSchmax.Location = new System.Drawing.Point(35, 12);
+            this.MaxSchmax.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MaxSchmax.Location = new System.Drawing.Point(0, 0);
             this.MaxSchmax.Name = "MaxSchmax";
-            this.MaxSchmax.Size = new System.Drawing.Size(152, 89);
+            this.MaxSchmax.Size = new System.Drawing.Size(800, 450);
             this.MaxSchmax.TabIndex = 0;
             this.MaxSchmax.Text = "MaxSchmax";
             this.MaxSchmax.UseVisualStyleBackColor = true;
