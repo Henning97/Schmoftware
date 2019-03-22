@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Schmoftware;
 
 namespace UnitTestSchmoftware
 {
@@ -7,9 +8,19 @@ namespace UnitTestSchmoftware
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestFakultaet()
         {
-            Assert.AreEqual("1", "1");
+            Fakultaet fakultaet = new Fakultaet();
+
+            Assert.AreEqual(fakultaet.GetFakultaet(0), (ulong)1);
+        }
+
+        [TestMethod]
+        public void TestFakultaet2()
+        {
+            Fakultaet fakultaet = new Fakultaet();
+
+            Assert.AreEqual(fakultaet.GetFakultaet(5), (ulong)120);
         }
     }
 }

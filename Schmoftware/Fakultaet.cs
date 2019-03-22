@@ -22,11 +22,23 @@ namespace Schmoftware
         /// <summary>
         /// Ermittelt 
         /// </summary>
-        /// <param name="number"></param>
-        /// <returns></returns>
-        public ulong GetFakultaet(uint number)
+        /// <param name="number">Nummer</param>
+        /// <returns>Fakultät</returns>
+        public ulong GetFakultaet(ulong number)
         {
+            if (number < 2)
+            {
+                return 1;
+            }
 
+            ulong retVal = 1;
+
+            for (ulong i = 2; i <= number; i++)
+            {
+                retVal *= i;
+            }
+
+            return retVal;
         }
 
         #endregion Public Methods

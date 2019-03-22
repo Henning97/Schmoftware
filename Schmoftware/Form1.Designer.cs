@@ -28,35 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MaxSchmax = new System.Windows.Forms.Button();
+            this.Calc = new System.Windows.Forms.Button();
+            this.Input = new System.Windows.Forms.TextBox();
+            this.Output = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // MaxSchmax
+            // Calc
             // 
-            this.MaxSchmax.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MaxSchmax.Location = new System.Drawing.Point(0, 0);
-            this.MaxSchmax.Name = "MaxSchmax";
-            this.MaxSchmax.Size = new System.Drawing.Size(800, 450);
-            this.MaxSchmax.TabIndex = 0;
-            this.MaxSchmax.Text = "MaxSchmax";
-            this.MaxSchmax.UseVisualStyleBackColor = true;
-            this.MaxSchmax.Click += new System.EventHandler(this.MaxSchmax_Click);
+            this.Calc.Location = new System.Drawing.Point(12, 38);
+            this.Calc.Name = "Calc";
+            this.Calc.Size = new System.Drawing.Size(159, 23);
+            this.Calc.TabIndex = 1;
+            this.Calc.Text = "Fakultät berechnen";
+            this.Calc.UseVisualStyleBackColor = true;
+            this.Calc.Click += new System.EventHandler(this.Calc_Click);
+            // 
+            // Input
+            // 
+            this.Input.Location = new System.Drawing.Point(12, 12);
+            this.Input.Name = "Input";
+            this.Input.Size = new System.Drawing.Size(159, 20);
+            this.Input.TabIndex = 2;
+            // 
+            // Output
+            // 
+            this.Output.Enabled = false;
+            this.Output.Location = new System.Drawing.Point(12, 67);
+            this.Output.Name = "Output";
+            this.Output.Size = new System.Drawing.Size(159, 20);
+            this.Output.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.MaxSchmax);
+            this.ClientSize = new System.Drawing.Size(183, 98);
+            this.Controls.Add(this.Output);
+            this.Controls.Add(this.Input);
+            this.Controls.Add(this.Calc);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Fakultät";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button MaxSchmax;
+        private System.Windows.Forms.Button Calc;
+        private System.Windows.Forms.TextBox Input;
+        private System.Windows.Forms.TextBox Output;
     }
 }
 
