@@ -52,9 +52,9 @@
             // 
             // Output
             // 
-            this.Output.Enabled = false;
             this.Output.Location = new System.Drawing.Point(12, 67);
             this.Output.Name = "Output";
+            this.Output.ReadOnly = true;
             this.Output.Size = new System.Drawing.Size(159, 20);
             this.Output.TabIndex = 3;
             // 
