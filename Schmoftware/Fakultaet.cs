@@ -26,6 +26,7 @@ namespace Schmoftware
         /// <returns>Fakultät</returns>
         public ulong GetFakultaet(ulong number)
         {
+            // Das muss so
             if (number < 2)
             {
                 return 1;
