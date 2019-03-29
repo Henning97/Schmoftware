@@ -20,7 +20,7 @@ namespace Schmoftware
         #region Public Methods
 
         /// <summary>
-        /// Ermittelt die Fakultät
+        /// Ermittelt die Fakultät (Test)
         /// </summary>
         /// <param name="number">Nummer</param>
         /// <returns>Fakultät</returns>
