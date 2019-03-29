@@ -38,6 +38,7 @@ namespace Schmoftware
                 retVal *= i;
             }
 
+            //Rückgabewert
             return retVal;
         }
 
